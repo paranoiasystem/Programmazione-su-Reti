@@ -1,0 +1,9 @@
+org/diego/studentiejb/DatabasePopulator.class
+org/diego/studentiejb/StudentEJB.class
+org/diego/studentiejb/LoggerInterceptor.class
+org/diego/studentiejb/Student.class
+org/diego/studentiejb/Student_.class
+org/diego/studentiejb/StudentMDB.class
+org/diego/studentiejb/Loggable.class
+org/diego/studentiejb/LoggerProducer.class
+org/diego/studentiejb/DatabaseProducer.class

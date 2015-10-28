@@ -1,0 +1,7 @@
+org/diego/supplierejb/DatabasePopulator.class
+org/diego/supplierejb/Supply_.class
+org/diego/supplierejb/Supply.class
+org/diego/supplierejb/SupplyEJB.class
+org/diego/supplierejb/LoggerInterceptor.class
+org/diego/supplierejb/Loggable.class
+org/diego/supplierejb/DatabaseProducer.class

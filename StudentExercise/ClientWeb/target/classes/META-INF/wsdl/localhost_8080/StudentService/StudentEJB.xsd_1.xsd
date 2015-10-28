@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://studentiejb.diego.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://studentiejb.diego.org/">
+
+<xs:element name="createStudent" type="tns:createStudent"/>
+
+<xs:element name="createStudentResponse" type="tns:createStudentResponse"/>
+
+<xs:element name="findForId" type="tns:findForId"/>
+
+<xs:element name="findForIdResponse" type="tns:findForIdResponse"/>
+
+<xs:element name="findForLastName" type="tns:findForLastName"/>
+
+<xs:element name="findForLastNameResponse" type="tns:findForLastNameResponse"/>
+
+<xs:element name="getStudents" type="tns:getStudents"/>
+
+<xs:element name="getStudentsResponse" type="tns:getStudentsResponse"/>
+
+<xs:element name="removeStudent" type="tns:removeStudent"/>
+
+<xs:element name="removeStudentResponse" type="tns:removeStudentResponse"/>
+
+<xs:element name="updateNumberOfExams" type="tns:updateNumberOfExams"/>
+
+<xs:element name="updateNumberOfExamsResponse" type="tns:updateNumberOfExamsResponse"/>
+
+<xs:element name="updateStudent" type="tns:updateStudent"/>
+
+<xs:element name="updateStudentResponse" type="tns:updateStudentResponse"/>
+
+<xs:complexType name="createStudent">
+<xs:sequence>
+<xs:element name="arg0" type="tns:student" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="student">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="lastName" type="xs:string" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="numberOfExams" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createStudentResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:student" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findForLastName">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findForLastNameResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:student" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findForId">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findForIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:student" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStudent">
+<xs:sequence>
+<xs:element name="arg0" type="tns:student" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateStudentResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:student" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeStudent">
+<xs:sequence>
+<xs:element name="arg0" type="tns:student" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeStudentResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="updateNumberOfExams">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateNumberOfExamsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:student" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStudents">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getStudentsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:student" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

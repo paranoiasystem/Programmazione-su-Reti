@@ -1,0 +1,6 @@
+org/diego/cdmodule/CDEJB.class
+org/diego/cdmodule/DatabasePopulator.class
+org/diego/cdmodule/CdMDB.class
+org/diego/cdmodule/DatabaseProducer.class
+org/diego/cdmodule/Cd_.class
+org/diego/cdmodule/Cd.class
